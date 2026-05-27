@@ -1,14 +1,14 @@
-import time
-
 class BullyElection:
-    def __init__(self, node_id, network_manager, logger):
+    def __init__(self, node_id, network_manager, logger, clock, timeout_mgr):
         self.node_id = int(node_id)
         self.network = network_manager
         self.logger = logger
+        self.clock = clock
+        self.timeout_mgr = timeout_mgr
         self.waiting_for_alive = False
 
     def start_election(self, peers):
-        """ Inicia a eleição conforme a lógica Bully do seu script original """
+        """ Inicia a eleição conforme a lógica Bully """
         self.logger.info(f"[BULLY] Nó {self.node_id} iniciando eleição...")
         
         # Encontra nós com prioridade (ID) maior que a minha
@@ -26,17 +26,20 @@ class BullyElection:
             self.logger.debug(f"[BULLY] Enviando 'election' para nó {peer_id}")
             self.network.send_to(addr, {'type': 'ELECTION', 'sender_id': self.node_id})
 
-        # Aguarda um tempo para receber 'alive' (equivalente ao socket.timeout no seu código)
-        time.sleep(2) 
+        # Aguarda um tempo adaptativo para receber 'alive'
+        # Usamos o timeout_mgr para saber qual o RTT estimado atual da rede,
+        # adicionando um bônus por segurança em época de sobrecarga (eleição)
+        wait_time = self.timeout_mgr.get_estimated_timeout()
+        self.clock.sleep(wait_time) 
 
         if self.waiting_for_alive:
             # Se ninguém respondeu 'alive' a tempo, assumimos a liderança
-            self.logger.warning(f"[BULLY] Nenhum nó superior respondeu. Assumindo a liderança.")
+            self.logger.warning(f"[BULLY] Nenhum nó superior respondeu em {wait_time:.2f}s. Assumindo a liderança.")
             self.announce_coordinator(peers)
             return 'LEADER', self.node_id
         else:
             # Alguém respondeu 'alive', então voltamos a ser seguidores esperando o anúncio
-            self.logger.info(f"[BULLY] Nó superior respondeu. Aguardando anúncio de coordenador.")
+            self.logger.info(f"[BULLY] Nó superior respondeu 'ALIVE'. Aguardando anúncio de coordenador.")
             return 'FOLLOWER', None
 
     def handle_message(self, message, current_state, peers):
@@ -52,7 +55,7 @@ class BullyElection:
                 if sender_addr:
                     self.network.send_to(sender_addr, {'type': 'ALIVE', 'sender_id': self.node_id})
                 
-                # Inicia a própria eleição logo em seguida
+                # Inicia a própria eleição logo em seguida (vira candidato)
                 return 'CANDIDATE', None
                 
         elif msg_type == 'ALIVE':
@@ -71,6 +74,6 @@ class BullyElection:
         return current_state, None
 
     def announce_coordinator(self, peers):
-        """ Equivale a espalhar a mensagem 'coordinator:id' do seu código original """
+        """ Espalha a mensagem 'coordinator:id' """
         msg = {'type': 'COORDINATOR', 'sender_id': self.node_id}
         self.network.broadcast(msg)

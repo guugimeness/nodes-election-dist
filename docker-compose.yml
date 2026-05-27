@@ -3,7 +3,7 @@ version: '3.8'
 services:
   node1:
     build: .
-    container_name: node_leader # Nomeado assim para facilitar o teste de "Falha do líder" inicial
+    container_name: node1
     environment:
       - NODE_ID=1
       - CLOCK_DRIFT_MS=120      # Deriva artificial do relógio em ms/s
@@ -11,6 +11,8 @@ services:
       - PEERS=node2:5000,node3:5000,node4:5000
     cap_add:
       - NET_ADMIN               # Necessário para usar o comando 'tc' (Atraso artificial)
+    volumes:
+      - ./logs:/app/logs
     networks:
       - dist_network
 
@@ -24,6 +26,8 @@ services:
       - PEERS=node1:5000,node3:5000,node4:5000
     cap_add:
       - NET_ADMIN
+    volumes:
+      - ./logs:/app/logs
     networks:
       - dist_network
 
@@ -37,6 +41,8 @@ services:
       - PEERS=node1:5000,node2:5000,node4:5000
     cap_add:
       - NET_ADMIN
+    volumes:
+      - ./logs:/app/logs
     networks:
       - dist_network
 
@@ -50,6 +56,8 @@ services:
       - PEERS=node1:5000,node2:5000,node3:5000
     cap_add:
       - NET_ADMIN
+    volumes:
+      - ./logs:/app/logs
     networks:
       - dist_network
 

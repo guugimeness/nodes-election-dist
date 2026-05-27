@@ -1,0 +1,122 @@
+[23:06:08.541] [INFO] [Node 3] Nó 3 inicializado com drift de 50.0 ms/s.
+[23:06:08.541] [INFO] [Node 3] [BULLY] Nó 3 iniciando eleição...
+[23:06:08.541] [INFO] [Node 3] Escutando conexões na porta 5000...
+[23:06:08.541] [DBG ] [Node 3] [BULLY] Enviando 'election' para nó 4
+[23:06:08.543] [DBG ] [Node 3] [BULLY] Recebi 'alive' do nó 4.
+[23:06:08.567] [DBG ] [Node 3] [BULLY] Recebi 'election' de 1. Respondendo 'alive'.
+[23:06:10.125] [INFO] [Node 3] [BULLY] Nó 4 assumiu como Coordenador.
+[23:06:10.125] [INFO] [Node 3] Reconhecendo Nó 4 como líder via HEARTBEAT.
+[23:06:12.042] [INFO] [Node 3] [BULLY] Nó superior respondeu 'ALIVE'. Aguardando anúncio de coordenador.
+[23:06:13.376] [INFO] [Node 3] Reconhecendo Nó 4 como líder via HEARTBEAT.
+[23:08:13.187] [INFO] [Node 3] Nó 3 inicializado com drift de 50.0 ms/s.
+[23:08:13.188] [INFO] [Node 3] [BULLY] Nó 3 iniciando eleição...
+[23:08:13.188] [INFO] [Node 3] Escutando conexões na porta 5000...
+[23:08:13.188] [DBG ] [Node 3] [BULLY] Enviando 'election' para nó 4
+[23:08:13.201] [INFO] [Node 3] [BULLY] Nó 4 assumiu como Coordenador.
+[23:08:16.689] [INFO] [Node 3] [BULLY] Nó superior respondeu 'ALIVE'. Aguardando anúncio de coordenador.
+[23:08:18.074] [INFO] [Node 3] Reconhecendo Nó 4 como líder via HEARTBEAT.
+[23:08:50.701] [WARN] [Node 3] Falha do líder detectada pelo timeout adaptativo! Iniciando eleição...
+[23:08:51.140] [DBG ] [Node 3] [BULLY] Recebi 'election' de 1. Respondendo 'alive'.
+[23:08:51.202] [INFO] [Node 3] [BULLY] Nó 3 iniciando eleição...
+[23:08:51.202] [DBG ] [Node 3] [BULLY] Enviando 'election' para nó 4
+[23:08:51.357] [DBG ] [Node 3] [BULLY] Recebi 'election' de 2. Respondendo 'alive'.
+[23:08:54.488] [WARN] [Node 3] [BULLY] Nenhum nó superior respondeu em 3.28s. Assumindo a liderança.
+[23:17:39.995] [INFO] [Node 3] Nó 3 inicializado com drift de 50.0 ms/s.
+[23:17:39.995] [INFO] [Node 3] [BULLY] Nó 3 iniciando eleição...
+[23:17:39.995] [INFO] [Node 3] Escutando conexões na porta 5000...
+[23:17:39.996] [DBG ] [Node 3] [BULLY] Enviando 'election' para nó 4
+[23:17:39.997] [DBG ] [Node 3] [BULLY] Recebi 'alive' do nó 4.
+[23:17:41.461] [INFO] [Node 3] [BULLY] Nó 4 assumiu como Coordenador.
+[23:17:41.462] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 4.25s
+[23:17:41.462] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:43.085] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 4.17s
+[23:17:43.085] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:43.496] [INFO] [Node 3] [BULLY] Nó superior respondeu 'ALIVE'. Aguardando anúncio de coordenador.
+[23:17:44.711] [INFO] [Node 3] Reconhecendo Nó 4 como líder via HEARTBEAT.
+[23:17:44.711] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 4.10s
+[23:17:44.711] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:46.336] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:47.961] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:49.586] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:51.210] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:52.835] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:54.460] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:56.085] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:57.710] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:17:59.335] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:00.960] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:02.585] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:04.210] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:05.833] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:07.459] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:09.083] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:10.708] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:12.333] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:13.958] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:15.581] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:17.206] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:18.830] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:20.455] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:22.080] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:23.705] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:25.330] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:26.955] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:28.579] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:30.204] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:31.829] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:34.512] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.83s
+[23:18:34.512] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:35.809] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.93s
+[23:18:35.809] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:37.558] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:39.071] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.86s
+[23:18:39.071] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:40.961] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.91s
+[23:18:40.961] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:42.670] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:43.922] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.91s
+[23:18:43.922] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:45.796] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.96s
+[23:18:45.796] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:47.341] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.91s
+[23:18:47.341] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:49.019] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:50.607] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:51.989] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.80s
+[23:18:51.989] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:53.849] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.86s
+[23:18:53.849] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:55.321] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.84s
+[23:18:55.321] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:57.373] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 4.02s
+[23:18:57.373] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:18:59.018] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:00.283] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.99s
+[23:19:00.283] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:01.943] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:03.325] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.90s
+[23:19:03.325] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:05.207] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.97s
+[23:19:05.207] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:06.950] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.94s
+[23:19:06.950] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:08.292] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.95s
+[23:19:08.293] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:10.112] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.98s
+[23:19:10.112] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:11.551] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 3.95s
+[23:19:11.551] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:13.533] [DBG ] [Node 3] Atraso na rede variou! Timeout adaptativo recalibrado para 4.07s
+[23:19:13.534] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:15.139] [DBG ] [Node 3] Recebi HEARTBEAT regular do líder 4
+[23:19:18.917] [DBG ] [Node 3] [BULLY] Recebi 'election' de 1. Respondendo 'alive'.
+[23:19:19.022] [INFO] [Node 3] [BULLY] Nó 3 iniciando eleição...
+[23:19:19.022] [DBG ] [Node 3] [BULLY] Enviando 'election' para nó 4
+[23:19:19.243] [DBG ] [Node 3] [BULLY] Recebi 'election' de 2. Respondendo 'alive'.
+[23:19:22.894] [DBG ] [Node 3] [BULLY] Recebi 'election' de 1. Respondendo 'alive'.
+[23:19:23.004] [WARN] [Node 3] [BULLY] Nenhum nó superior respondeu em 3.98s. Assumindo a liderança.
+[23:19:23.004] [DBG ] [Node 3] Enviando HEARTBEAT para todos os nós (Broadcast).
+[23:19:24.505] [DBG ] [Node 3] Enviando HEARTBEAT para todos os nós (Broadcast).
+[23:19:26.006] [DBG ] [Node 3] Enviando HEARTBEAT para todos os nós (Broadcast).
+[23:19:27.507] [DBG ] [Node 3] Enviando HEARTBEAT para todos os nós (Broadcast).
+[23:19:29.008] [DBG ] [Node 3] Enviando HEARTBEAT para todos os nós (Broadcast).
